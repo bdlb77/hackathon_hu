@@ -91,6 +91,7 @@ Rails.application.routes.draw do
         member do
           get 'results'
           get 'form_1'
+          get 'form_2'
         end
       end
     end

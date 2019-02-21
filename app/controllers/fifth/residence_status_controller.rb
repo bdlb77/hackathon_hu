@@ -6,7 +6,7 @@ class Fifth::ResidenceStatusController  < ApplicationController
   end
 
   def answer
-    if params[:applicant][:residence_status] == "Gestattung"
+    if params[:applicant][:residence_status] == "temporary resident permit"
       @applicant.residence_status = 1
       @applicant.save
       redirect_to question_sixth_occupation_type_path(@applicant)

@@ -41,18 +41,18 @@ en:
     residence_status:
       question:
         name: "Which residence permit does your applicant hold?"
-        option_1: "Arbeitserlaubnis"
-        option_2: "Gestattung"
-        option_3: "Duldung"
+        option_1: "residence permit"
+        option_2: "temporary resident permit"
+        option_3: "tolerated resident permit"
         next: "Next"
   sixth:
     occupation_type:
       question:
         name: "Which type of occupation do you want to offer your applicant?"
-        option_1: "Praktikum"
-        option_2: "Freiwilligendienst"
-        option_3: "Freiwilligendienst"
-        option_4: "Abhängige Beschäftigung"
+        option_1: "Praktikum (internship)"
+        option_2: "Freiwilligendienst (voluntary service)"
+        option_3: "Ausbildung (Traineeship)"
+        option_4: "Abhängige Beschäftigung (regular employment)"
   seventh:
     university_degree:
       question:
