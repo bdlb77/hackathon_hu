@@ -1,0 +1,31 @@
+<div class="navbar py-3 px-4 our-navbar">
+  <%= link_to root_path, class: 'navbar-link' do %>
+    <%= image_tag "icon_one.png", class: "small-image" %>
+  <% end %>
+  <div class="nav-bar-right d-flex align-items-center">
+    <% if user_signed_in? %>
+       <%= link_to t('views.shared.navbar.new_applicant'), new_applicant_path, class: "px-3 d-none d-sm-block navbar-link" %>
+       <%= link_to t('views.shared.navbar.all_applicants'), applicants_path, class: "px-3 d-none d-sm-block navbar-link" %>
+      <%= link_to t('views.shared.navbar.profile'), "#", class: "px-3 d-none d-sm-block navbar-link" %>
+    <% else %>
+      <%= link_to t('views.shared.navbar.login'), new_user_session_path, class: "px-3 d-none d-sm-block navbar-link" %>
+    <% end %>
+    <div class="dropdown  d-none d-sm-block">
+      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+        <% if user_signed_in? %>
+          <%= link_to t('views.shared.navbar.profile'), "#", class: "px-3 d-none d-sm-block navbar-link dropdown-item" %>
+        <% else %>
+          <%= link_to t('views.shared.navbar.login'), new_user_session_path, class: "px-3 d-none d-sm-block navbar-link dropdown-item" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <div class="dropdown burger d-block d-sm-none">
+    <i class="fas fa-bars" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+     <%= link_to "Action", "#", class: "dropdown-item" %>
+     <%= link_to "Another action", "#", class: "dropdown-item" %>
+     <%= link_to "Something else here", "#", class: "dropdown-item" %>
+   </div>
+ </div>
+</div>

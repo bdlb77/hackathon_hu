@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <div class="question-card">
+        <div class="question-card-header">
+          <h3>3</h3>
+          <div class="p-flex-box">
+            <span class="question">
+              <%= t('third.refugee_crisis.question.name') %>
+            </span>
+          </div>
+        </div>
+        <div class="question-content">
+          <%= simple_form_for @applicant, :url => answer_third_refugee_crisis_path, :method => :post do |f| %>
+          <%= f.input :origin_state, collection: @nations, label: t('third.refugee_crisis.question.state_label') %>
+          <div class="button-on-right">
+             <%= f.submit t('second.living_obligations.question.next'), class: "our-small-btn" %>
+          </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

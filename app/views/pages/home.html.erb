@@ -1,0 +1,39 @@
+<div class="home-banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= image_path 'climbers.jpg' %>);">
+  <div class="container">
+    <h1><%= t('home.header') %></h1><br>
+    <p><%= t('home.sub_header') %></p>
+    <div class="position-button">
+      <% if user_signed_in? %>
+        <% if current_user.applicants.blank? %>
+        <%= link_to "Start now", new_applicant_path, class: "our-big-btn" %>
+        <% else %>
+        <%= link_to "Start now", applicants_path, class: "our-big-btn" %>
+        <% end %>
+      <% else %>
+      <%= link_to "Start now", new_applicant_path, class: "our-big-btn" %>
+      <% end %>
+    </div>
+  </div>
+</div>
+<div class="wrapper-linear pt-5 pb-5">
+  <div class="container d-flex justify-content-around">
+    <div class="col-md-4 d-flex align-center justify-content-center">
+      <div class="icon-home display-f-column-center">
+        <%= image_tag '001-contract.png' %>
+        <h4 class="mt-5"><%= t('home.contract') %></p>
+      </div>
+    </div>
+    <div class="col-md-4 d-flex align-center justify-content-center">
+      <div class="icon-home display-f-column-center">
+        <%= image_tag '002-enterprise.png' %>
+        <h4 class="mt-5"><%= t('home.people') %></p>
+      </div>
+    </div>
+    <div class="col-md-4 d-flex align-center justify-content-center">
+      <div class="icon-home d-flex display-f-column-center">
+        <%= image_tag '003-agreement.png' %>
+        <h4 class="mt-5"><%= t('home.agreement') %></p>
+      </div>
+    </div>
+  </div>
+</div>

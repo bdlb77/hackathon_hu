@@ -1,0 +1,18 @@
+.our-navbar {
+  background-color: $purple;
+  color: $white;
+  font-size: 16px;
+  height: 70px;
+}
+.navbar-link {
+  color: $white;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+    color: $white;
+  }
+}
+
+.small-image {
+  height: 50px;
+}

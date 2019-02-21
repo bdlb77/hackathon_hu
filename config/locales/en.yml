@@ -1,0 +1,78 @@
+en:
+  hello: "Hello world"
+  company: "Company Profile"
+  home:
+    contract: "Prefilled forms with one click"
+    people: "Focus on the people"
+    agreement: "Results fast and simple"
+    header: "Immigration Works"
+    sub_header: "Find the help you need to hire refugees."
+  views:
+    shared:
+      navbar:
+        profile: "Profile"
+        login: "Login"
+        new_applicant: "New Applicant"
+        all_applicants: "All Applicants"
+  first:
+    asylums:
+      question:
+        name: "Did your applicant apply for asylum in Germany?"
+        next: "Next"
+  second:
+    living_obligations:
+      question:
+        name: "Does your applicant have the obligation to live in refugee housing?"
+        next: "Next"
+  third:
+    refugee_crisis:
+      question:
+        name: "Where does your applicant come from?"
+        state_label: "State of origin:"
+  fourth:
+    application_dates:
+        question:
+          input_label: "Date of application for asylum:"
+          name: "When has the applicant applied for asylum in Germany?"
+          next: "Next"
+        unsuccessful_date:
+          wait: "Please Wait 3 months"
+  fifth:
+    residence_status:
+      question:
+        name: "Which residence permit does your applicant hold?"
+        option_1: "Arbeitserlaubnis"
+        option_2: "Gestattung"
+        option_3: "Duldung"
+        next: "Next"
+  sixth:
+    occupation_type:
+      question:
+        name: "Which type of occupation do you want to offer your applicant?"
+        option_1: "Praktikum"
+        option_2: "Freiwilligendienst"
+        option_3: "Freiwilligendienst"
+        option_4: "Abhängige Beschäftigung"
+  seventh:
+    university_degree:
+      question:
+        name: "Does your applicant hold an university degree?"
+  eight:
+    final_info:
+      question:
+        name: "Please check again your applicant's details"
+        option_1: "Male"
+        option_2: "Female"
+        option_3: "Other"
+
+
+
+
+
+
+
+
+
+
+
+

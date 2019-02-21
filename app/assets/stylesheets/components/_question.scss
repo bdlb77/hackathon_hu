@@ -1,0 +1,38 @@
+.question-card {
+  box-shadow: $shadow;
+  margin-top: 30px;
+  background-color: $white;
+}
+.green-header {
+  background-color: $green !important;
+}
+.question-card-header {
+  background-color: $purple;
+  color: $white;
+  display: flex;
+  h3, h5 {
+    font-size: 32px;
+    padding-left: 15px;
+    margin-top: 6px;
+  }
+  h5 {
+    text-align: center;
+    margin-left: 25px;
+  }
+  .p-flex-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    margin-left: 12px;
+    font-size: 20px;
+  }
+}
+
+.question-content {
+  padding: 25px 45px;
+}
+
+.button-on-right {
+  display: flex;
+  justify-content: flex-end;
+}

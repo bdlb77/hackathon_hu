@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+
+<% @applicants.each do |applicant| %>
+<div class="col-sm-3">
+  <div class="question-card ">
+    <div class="question-card-header">
+    <h5> <%= applicant.first_name %> <%= applicant.last_name %> </h5>
+    </div>
+     <div class="question-content">
+      <p>Born in:  <%= applicant.birth_place %> </p>
+      <%= link_to "Start process", question_first_asylum_path(applicant), class: "our-small-btn" %>
+    </div>
+  </div>
+</div>
+
+
+<% end %>
+  </div>
+</div>

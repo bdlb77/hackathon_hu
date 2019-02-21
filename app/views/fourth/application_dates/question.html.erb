@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <div class="question-card">
+        <div class="question-card-header">
+          <h3><%= t('fourth.application_dates.question.4') %></h3>
+          <div class="p-flex-box">
+            <span class="question">
+              <%= t('fourth.application_dates.question.name') %>
+            </span>
+          </div>
+        </div>
+        <div class="question-content">
+          <%= simple_form_for @applicant, :url => answer_fourth_application_date_path, :method => :post do |f| %>
+          <%= f.input :application_date, as: :date, label: t('fourth.application_dates.question.input_label') %>
+          <div class="button-on-right">
+            <%= f.submit t('fourth.application_dates.question.next'), class: "our-small-btn" %>
+          </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

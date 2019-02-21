@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <div class="question-card">
+        <div class="question-card-header">
+          <h3>2</h3>
+          <div class="p-flex-box">
+            <span class="question">
+              <%= t('second.living_obligations.question.name') %>
+            </span>
+          </div>
+        </div>
+        <div class="question-content">
+          <%= simple_form_for @applicant, :url => answer_second_living_obligation_path, :method => :post do |f| %>
+          <%= f.input :living_obligation, as: :radio_buttons, label: "" %>
+          <div class="button-on-right">
+            <%= f.submit t('second.living_obligations.question.next'), class: "our-small-btn" %>
+          </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

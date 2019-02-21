@@ -1,0 +1,66 @@
+de:
+  hello: "Hello world"
+  company: "Company Profile"
+  home:
+    header: "Wir helfen dem Mittelstand dabei Geflüchtete einzustellen!"
+    sub_header: "Finden Sie dringend gesuchte Kollegen."
+    contract: "Fertige Formulare auf einen Klick"
+    people: "Ergebnisse schnell und einfach"
+    agreement: "Ergebnisse schnell und einfach"
+  views:
+    shared:
+      navbar:
+        profile: "Profil"
+        login: "Login"
+        new_applicant: "Neuer Bewerber"
+        all_applicants: "Alle Bewerber"
+  first:
+    asylums:
+      question:
+        name: "Wurde ein Asylantrag bereits gestellt?"
+        next: "Weiter"
+  second:
+    living_obligations:
+      question:
+        name: "Besteht für den Bewerber eine Wohnpflicht in einer Aufnahmeeinrichtung?"
+        next: "Weiter"
+  third:
+    refugee_crisis:
+      question:
+        name: "Woher kommt der Bewerber?"
+        state_label: "Herkunftsland:"
+  fourth:
+    application_dates:
+        question:
+          input_label: "Datum der Antragstellung:"
+          name: "Wann wurde der Antrag auf Asyl in Deutschland gestellt?"
+          next: "Weiter"
+        unsuccessful_date:
+          wait: "Bitte warte drei Monate"
+  fifth:
+    residence_status:
+      question:
+        name: "Welchen Aufenthaltstitel hat der Bewerber?"
+        option_1: "Arbeitserlaubnis"
+        option_2: "Gestattung"
+        option_3: "Duldung"
+        next: "Weiter"
+  sixth:
+    occupation_type:
+      question:
+        name: "Welche Art der Beschäftigung planen Sie zu vergeben?"
+        option_1: "Praktikum"
+        option_2: "Freiwilligendienst"
+        option_3: "Freiwilligendienst"
+        option_4: "Abhängige Beschäftigung"
+  seventh:
+    university_degree:
+      question:
+        name: "Hat der Bewerber einen Hochschulabschluss?"
+  eight:
+    final_info:
+      question:
+        name: "Bitte kontrollieren Sie die Daten des Bewerbers"
+        option_1: "Männlich"
+        option_2: "Weiblich"
+        option_3: "Divers"

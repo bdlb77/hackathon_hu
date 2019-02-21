@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <div class="question-card">
+        <div class="question-card-header">
+          <h3>8</h3>
+          <div class="p-flex-box">
+            <span class="question">
+              <%= t('eight.final_info.question.name') %>
+            </span>
+          </div>
+        </div>
+        <div class="question-content">
+          <%= simple_form_for @applicant do |f| %>
+          <%= f.input :first_name %>
+          <%= f.input :last_name %>
+          <%= f.input :gender, collection: [t('eight.final_info.question.option_1'), t('eight.final_info.question.option_2'), t('eight.final_info.question.option_3')], as: :radio_buttons %>
+          <%= f.input :birth_date %>
+          <%= f.input :birth_place %>
+          <div class="button-on-right">
+            <%= f.submit t('first.asylums.question.next'), class: "our-small-btn" %>
+          </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

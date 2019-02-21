@@ -1,0 +1,41 @@
+.result-card {
+  box-shadow: $shadow;
+  margin-top: 30px;
+  background-color: $white;
+  padding: 10px;
+}
+
+.result-card-header-fail {
+  background-color: $red;
+
+}
+.result-card-header-wait {
+  background-color: $orange;
+}
+.result-card-header-success {
+  background-color: $green;
+}
+.result-card-header {
+  display: flex;
+  h3 {
+    font-size: 32px;
+    padding-left: 15px;
+    margin-top: 6px;
+  }
+  .p-flex-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    margin-left: 12px;
+    font-size: 20px;
+  }
+}
+
+.question-content {
+  padding: 25px 45px;
+}
+
+.button-on-right {
+  display: flex;
+  justify-content: flex-end;
+}

@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <div class="question-card">
+        <div class="question-card-header">
+          <h3>6</h3>
+          <div class="p-flex-box">
+            <span class="question">
+              <%= t('sixth.occupation_type.question.name') %>
+            </span>
+          </div>
+        </div>
+        <div class="question-content">
+          <%= simple_form_for @applicant, :url => answer_sixth_occupation_type_path(@applicant), :method => :post do |f| %>
+          <%= f.input :occupation_type, collection: [t('sixth.occupation_type.question.option_1'), t('sixth.occupation_type.question.option_2'), t('sixth.occupation_type.question.option_3'), t('sixth.occupation_type.question.option_4')], label: '', as: :radio_buttons %>
+          <div class="button-on-right">
+            <%= f.submit t('fifth.residence_status.question.next'), class: "our-small-btn" %>
+          </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
