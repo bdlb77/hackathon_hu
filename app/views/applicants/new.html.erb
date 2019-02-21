@@ -7,8 +7,8 @@
           <%= f.input :first_name %>
           <%= f.input :last_name %>
           <%= f.input :gender, collection: [t('eight.final_info.question.option_1'), t('eight.final_info.question.option_2'), t('eight.final_info.question.option_3')], as: :radio_buttons %>
-          <%= f.input :birth_date %>
-          <%= f.input :birth_place %>
+          <%= f.input :birth_date, as: :date, start_year: Date.today.year - 90 %>
+          <%= f.input :birth_place, collection: @nations %>
           <div class="button-on-right">
             <%= f.submit t('first.asylums.question.next'), class: "our-small-btn" %>
           </div>
