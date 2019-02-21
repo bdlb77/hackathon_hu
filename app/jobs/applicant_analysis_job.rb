@@ -3,7 +3,7 @@ class ApplicantAnalysisJob < ApplicationJob
 
   def perform(applicant_id)
     applicant = Applicant.find(applicant_id)
-    CSV.open("one_applicant.csv", "wb"m csv_options) do |csv_row|
+    CSV.open("one_applicant.csv", "wb", csv_options) do |csv_row|
       csv_row << applicant.asylum ? 1 : 0
       csv_row << applicant.Arbeitserlaubnis? ? 1 : 0
       csv_row << applicant.living_obligation ? 1 : 0
