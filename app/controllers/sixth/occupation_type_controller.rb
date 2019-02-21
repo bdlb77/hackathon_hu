@@ -8,7 +8,7 @@ class Sixth::OccupationTypeController < ApplicationController
 
   def answer
     # @applicant.update(applicant_params)
-     if params[:applicant][:occupation_type] == "Abhängige Beschäftigung"
+     if params[:applicant][:occupation_type] == "Abhängige Beschäftigung (regular employment)"
       @applicant.occupation_type = 3
       @applicant.save
       redirect_to question_seventh_university_degree_path(@applicant)

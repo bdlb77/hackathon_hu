@@ -15,4 +15,15 @@ class Nineth::ResultsController < ApplicationController
       end
     end
   end
+
+  def form_2
+    @applicant = Applicant.find(params[:id])
+    respond_to do |format|
+      format.html
+      format.pdf do
+        render  pdf: "your-filename"
+      end
+    end
+  end
+
 end
