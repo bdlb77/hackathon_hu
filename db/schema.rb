@@ -20,10 +20,10 @@ ActiveRecord::Schema.define(version: 2019_02_21_095225) do
     t.integer "residence_status"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.boolean "living_obligation"
-    t.date "application_date"
     t.boolean "safe_origin"
     t.string "origin_state"
+    t.boolean "living_obligation"
+    t.date "application_date"
     t.integer "occupation_type"
     t.boolean "university_degree"
     t.bigint "user_id"
