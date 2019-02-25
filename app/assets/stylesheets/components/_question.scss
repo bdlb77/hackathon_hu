@@ -37,3 +37,26 @@
   display: flex;
   justify-content: flex-end;
 }
+
+.picture-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.active {
+  background-color: blue;
+}
+
+.radio-buttons-style {
+  display: flex;
+  input {
+    display: none;
+  }
+  label {
+    background-color: #E1E1E1;
+    padding: 5px 10px;
+    box-shadow: $box-shadow;
+    border-radius: 2px;
+  }
+}

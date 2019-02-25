@@ -19,6 +19,7 @@ gem 'devise-i18n', '~> 1.2'
 gem 'rails-i18n', '5.0.3'
 gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary'
+gem 'country_select', '~> 4.0'
 
 
 group :development do

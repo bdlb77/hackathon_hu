@@ -12,7 +12,25 @@
         </div>
         <div class="question-content">
           <%= simple_form_for @applicant, :url => answer_fifth_residence_status_path(@applicant), :method => :post do |f| %>
-          <%= f.input :residence_status, collection: [t('fifth.residence_status.question.option_1'), t('fifth.residence_status.question.option_2'), t('fifth.residence_status.question.option_3')], label: '', as: :radio_buttons %>
+          <%# f.input :residence_status, collection: [t('fifth.residence_status.question.option_1'), t('fifth.residence_status.question.option_2'), t('fifth.residence_status.question.option_3')], label: '', as: :radio_buttons %>
+          <div class="form-check picture-input">
+            <input class="form-check-input is-valid radio_buttons optional" type="radio" value="residence permit" name="applicant[residence_status]" id="applicant_residence_status_residence_permit">
+            <%= image_tag 'residence permit.png', height: 130 %>
+            <label class="collection_radio_buttons" for="applicant_residence_status_residence_permit"><%= t('fifth.residence_status.question.option_1') %></label>
+          </div>
+          <br>
+          <div class="form-check picture-input">
+            <input class="form-check-input is-valid radio_buttons optional" type="radio" value="temporary resident permit" name="applicant[residence_status]" id="applicant_residence_status_temporary_resident_permit">
+            <%= image_tag 'temporary.png', height: 130 %>
+            <label class="collection_radio_buttons" for="applicant_residence_status_temporary_resident_permit"><%= t('fifth.residence_status.question.option_2') %></label>
+          </div>
+          <br>
+          <div class="form-check picture-input">
+            <input class="form-check-input is-valid radio_buttons optional" type="radio" value="tolerated resident permit" name="applicant[residence_status]" id="applicant_residence_status_tolerated_resident_permit">
+            <%= image_tag 'tolerated permit.png', height: 130 %>
+            <label class="collection_radio_buttons" for="applicant_residence_status_tolerated_resident_permit"><%= t('fifth.residence_status.question.option_3') %></label>
+          </div>
+          <br>
           <div class="button-on-right">
             <%= f.submit t('fifth.residence_status.question.next'), class: "our-small-btn" %>
           </div>
