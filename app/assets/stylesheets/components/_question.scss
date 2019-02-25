@@ -49,7 +49,7 @@
 }
 
 .radio-buttons-style {
-  display: flex;
+  // display: flex;
   input {
     display: none;
   }
@@ -59,4 +59,8 @@
     box-shadow: $box-shadow;
     border-radius: 2px;
   }
+}
+
+.test {
+  display: flex;
 }

@@ -11,7 +11,17 @@
           </div>
         </div>
         <div class="question-content">
-          <%= simple_form_for @applicant do |f| %>
+          <%= simple_form_for @applicant, wrapper: :horizontal_form,
+  wrapper_mappings: {
+    boolean:       :horizontal_boolean,
+    check_boxes:   :horizontal_collection,
+    date:          :horizontal_multi_select,
+    datetime:      :horizontal_multi_select,
+    file:          :horizontal_file,
+    radio_buttons: :horizontal_collection,
+    range:         :horizontal_range,
+    time:          :horizontal_multi_select
+  } do |f| %>
           <%= f.input :first_name %>
           <%= f.input :last_name %>
           <%= f.input :gender, collection: [t('eight.final_info.question.option_1'), t('eight.final_info.question.option_2'), t('eight.final_info.question.option_3')], as: :radio_buttons %>
@@ -21,9 +31,12 @@
           <%= f.input :asylum, as: :radio_buttons, wrapper_html: {class: "radio-buttons-style"} %>
           <%= f.input :living_obligation, as: :radio_buttons, wrapper_html: {class: "radio-buttons-style"} %>
           <%= f.input :application_date %>
+
           <%= f.input :residence_status, as: :radio_buttons, wrapper_html: {class: "radio-buttons-style"} %>
+
           <%= f.input :occupation_type, as: :radio_buttons, wrapper_html: {class: "radio-buttons-style"} %>
           <%= f.input :university_degree, as: :radio_buttons, wrapper_html: {class: "radio-buttons-style"} %>
+
           <div class="button-on-right">
             <%= f.submit t('first.asylums.question.next'), class: "our-small-btn" %>
           </div>
