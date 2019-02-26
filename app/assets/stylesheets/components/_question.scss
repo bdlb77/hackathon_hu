@@ -65,15 +65,21 @@
     visibility: hidden;
   }
   label {
-  background-color: $light-gray;
-  padding: 5px 10px;
-  box-shadow: $less-shadow;
-  border-radius: 2px;
-  transition: all 0.2s ease;
-  &:hover {
-    background-color: $gray;
-    color: $white;
+    background-color: $light-gray;
+    padding: 5px 10px;
+    box-shadow: $less-shadow;
+    border-radius: 2px;
+    transition: all 0.2s ease;
+    &:hover {
+      background-color: $gray;
+      color: $white;
 
+    }
   }
 }
+
+.small-font > .test {
+  label {
+    font-size: 12px;
+  }
 }
