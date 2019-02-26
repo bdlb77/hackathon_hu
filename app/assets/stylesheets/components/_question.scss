@@ -50,17 +50,30 @@
 
 .radio-buttons-style {
   // display: flex;
-  input {
-    display: none;
-  }
   label {
-    background-color: #E1E1E1;
-    padding: 5px 10px;
-    box-shadow: $box-shadow;
-    border-radius: 2px;
+    // background-color: #E1E1E1;
+    // padding: 5px 10px;
+    // box-shadow: $box-shadow;
+    // border-radius: 2px;
   }
 }
 
 .test {
   display: flex;
+  padding-left: 0px;
+  input {
+    visibility: hidden;
+  }
+  label {
+  background-color: $light-gray;
+  padding: 5px 10px;
+  box-shadow: $less-shadow;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+  &:hover {
+    background-color: $gray;
+    color: $white;
+
+  }
+}
 }
