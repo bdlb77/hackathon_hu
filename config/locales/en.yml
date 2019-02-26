@@ -64,6 +64,9 @@ en:
         option_1: "Male"
         option_2: "Female"
         option_3: "Other"
+      applied_for_asylum: "Applied for asylum?"
+      living_obligation: "Lives in refugee housing?"
+
 
 
 
