@@ -3,6 +3,7 @@ class First::AsylumsController < ApplicationController
   before_action :set_applicant, only: [:question, :answer]
 
   def question
+    render layout: "question"
   end
 
   def answer

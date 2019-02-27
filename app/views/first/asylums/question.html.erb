@@ -1,24 +1,13 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-8 offset-md-2">
-      <div class="question-card">
-        <div class="question-card-header">
-          <h3><%= t('first.asylums.question.1') %></h3>
-          <div class="p-flex-box">
-            <span class="question">
-              <%= t('first.asylums.question.name') %>
-            </span>
-          </div>
-        </div>
-        <div class="question-content">
-          <%= simple_form_for @applicant, :url => answer_first_asylum_path(@applicant), :method => :post do |f| %>
-          <%= f.input :asylum, as: :radio_buttons, label: "" %>
-          <div class="button-on-right">
-            <%= f.submit t('first.asylums.question.next'), class: "our-small-btn" %>
-          </div>
-          <% end %>
-        </div>
-      </div>
-    </div>
-  </div>
+<%= content_for :question_number do %>
+1
+<% end %>
+<%= content_for :question_title do %>
+  <%= t('first.asylums.question.name') %>
+<% end %>
+
+<%= simple_form_for @applicant, :url => answer_first_asylum_path(@applicant), :method => :post do |f| %>
+<%= f.input :asylum, as: :radio_buttons, label: "" %>
+<div class="button-on-right">
+  <%= f.submit t('first.asylums.question.next'), class: "our-small-btn" %>
 </div>
+<% end %>
