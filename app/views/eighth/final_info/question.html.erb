@@ -25,12 +25,11 @@
           <%= f.input :first_name %>
           <%= f.input :last_name %>
           <%= f.input :gender, collection: [t('eight.final_info.question.option_1'), t('eight.final_info.question.option_2'), t('eight.final_info.question.option_3')], as: :radio_buttons %>
-          <%= f.input :birth_date %>
-          <%# f.country_select :birth_place %>
+          <%= f.input :birth_date, as: :string, required: false, input_html: {class: "datepicker"} %>
           <%= f.input :birth_place %>
           <%= f.input :asylum, as: :radio_buttons, wrapper_html: {class: "radio-buttons-style"}, label: t('eight.final_info.applied_for_asylum') %>
           <%= f.input :living_obligation, as: :radio_buttons, wrapper_html: {class: "radio-buttons-style"}, label: t('eight.final_info.living_obligation') %>
-          <%= f.input :application_date %>
+          <%= f.input :application_date, as: :string, required: false, input_html: {class: "datepicker"} %>
 
           <%# f.input :residence_status, as: :radio_buttons, wrapper_html: {class: "radio-buttons-style"} %>
           <%= f.input :residence_status, collection: [t('fifth.residence_status.question.option_1'), t('fifth.residence_status.question.option_2'), t('fifth.residence_status.question.option_3')], as: :radio_buttons, wrapper_html: {class: 'small-font'} %>
