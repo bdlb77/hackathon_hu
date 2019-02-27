@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="alternate" hreflang="de" href="/de">
+    <link rel="alternate" hreflang="en" href="/">
+
+    <title>Stay right</title>
+
+    <%= csrf_meta_tags %>
+    <%= action_cable_meta_tag %>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+
+    <%= wicked_pdf_stylesheet_link_tag "pdf" -%>
+    <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
+  </head>
+  <body class="regular">
+    <%= render 'shared/navbar' %>
+    <%= render 'shared/flashes' %>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <div class="question-card">
+            <div class="question-card-header">
+              <%= yield(:question_number) %>
+              <div class="p-flex-box">
+                <span class="question">
+                  <%= yield(:question_title) %>
+                </span>
+              </div>
+            </div>
+            <div class="question-content">
+              <%= yield %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%= javascript_include_tag 'application' %>
+    <%= javascript_pack_tag 'application' %>
+  </body>
+</html>
