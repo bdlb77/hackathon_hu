@@ -12,7 +12,7 @@
         </div>
         <div class="question-content">
           <%= simple_form_for @applicant, :url => answer_fourth_application_date_path, :method => :post do |f| %>
-          <%= f.input :application_date, as: :date, label: t('fourth.application_dates.question.input_label') %>
+          <%= f.input :application_date, as: :date, label: t('fourth.application_dates.question.input_label'), as: :string, required: false, input_html: {class: "datepicker"} %>
           <div class="button-on-right">
             <%= f.submit t('fourth.application_dates.question.next'), class: "our-small-btn" %>
           </div>
