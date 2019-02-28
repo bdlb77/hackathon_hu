@@ -4,6 +4,7 @@
   <% end %>
   <div class="nav-bar-right d-flex align-items-center">
     <% if user_signed_in? %>
+      <%= link_to 'test questionnaire', questionnaire_new_path, class: "px-3 d-none d-sm-block navbar-link" %>
        <%= link_to t('views.shared.navbar.new_applicant'), new_applicant_path, class: "px-3 d-none d-sm-block navbar-link" %>
        <%= link_to t('views.shared.navbar.all_applicants'), applicants_path, class: "px-3 d-none d-sm-block navbar-link" %>
       <%= link_to t('views.shared.navbar.profile'), "#", class: "px-3 d-none d-sm-block navbar-link" %>

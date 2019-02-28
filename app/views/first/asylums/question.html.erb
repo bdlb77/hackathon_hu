@@ -1,7 +1,8 @@
 <div class="container">
   <div class="row">
     <div class="col-md-8 offset-md-2">
-      <div class="question-card">
+      <div class="" data-controller="form">
+      <div class="question-card" >
         <div class="question-card-header">
           <h3><%= t('first.asylums.question.1') %></h3>
           <div class="p-flex-box">
@@ -11,14 +12,36 @@
           </div>
         </div>
         <div class="question-content">
-          <%= simple_form_for @applicant, :url => answer_first_asylum_path(@applicant), :method => :post do |f| %>
+          <%= simple_form_for @applicant, :url => answer_first_asylum_path(@applicant), :method => :post, remote: true do |f| %>
           <%= f.input :asylum, as: :radio_buttons, label: "" %>
+          <%= f.input :first_name, :input_html => { data: { target: "form.name"} } %>
           <div class="button-on-right">
-            <%= f.submit t('first.asylums.question.next'), class: "our-small-btn" %>
+            <%= f.submit t('first.asylums.question.next'), class: "our-small-btn", data: { action: "click->form#next" } %>
           </div>
           <% end %>
+          <button data-action="click->form#greet">Greet</button>
         </div>
       </div>
+
+
+      <div class="question-card" data-target="form.next">
+        <p>test</p>
+      </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
     </div>
   </div>
 </div>

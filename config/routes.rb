@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'questionnaire/new'
   devise_for :users
 
   scope '(:locale)', locale: /de|en/  do
