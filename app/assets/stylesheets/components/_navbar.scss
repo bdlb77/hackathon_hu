@@ -1,18 +1,15 @@
 .our-navbar {
-  background-color: $purple;
+  background-color: $white;
   color: $white;
   font-size: 16px;
   height: 70px;
+  border-bottom: 2px solid $purple
 }
 .navbar-link {
-  color: $white;
+  color: $purple;
   text-decoration: none;
   &:hover {
     text-decoration: underline;
-    color: $white;
+    color: $purple;
   }
-}
-
-.small-image {
-  height: 50px;
 }
