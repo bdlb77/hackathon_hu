@@ -17,6 +17,7 @@ en:
         login: "Login"
         new_applicant: "New Applicant"
         all_applicants: "All Applicants"
+        sign_out: "Sign out"
   first:
     asylums:
       question:

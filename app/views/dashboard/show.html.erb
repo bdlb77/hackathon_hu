@@ -1,18 +1,18 @@
-<h1>Dashboard</h1>
 
 
-<div class="container">
+<div class="container mt-3">
+<h3>Dashboard</h3>
   <div class="row">
 
 <% @applicants.each do |applicant| %>
 <div class="col-sm-3">
-  <div class="question-card ">
+  <div class="dashboard-card ">
     <div class="question-card-header">
-    <h5> <%= applicant.first_name %> <%= applicant.last_name %> </h5>
+    <p> <%= applicant.first_name %> <%= applicant.last_name %> </p>
     </div>
      <div class="question-content">
       <p>Born in:  <%= applicant.birth_place %> </p>
-      <%= link_to "Start process", question_first_asylum_path(applicant), class: "our-small-btn" %>
+      <%= link_to "Resume process", question_first_asylum_path(applicant), class: "our-small-btn" %>
     </div>
   </div>
 </div>

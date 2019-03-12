@@ -6,6 +6,7 @@
     <% if user_signed_in? %>
        <%= link_to t('views.shared.navbar.new_applicant'), new_applicant_path, class: "px-3 d-none d-sm-block navbar-link" %>
       <%= link_to t('views.shared.navbar.profile'), dashboard_path, class: "px-3 d-none d-sm-block navbar-link" %>
+      <%= link_to t('views.shared.navbar.sign_out'), destroy_user_session_path, method: :delete, class: "px-3 d-none d-sm-block navbar-link" %>
     <% else %>
       <%= link_to t('views.shared.navbar.login'), new_user_session_path, class: "px-3 d-none d-sm-block navbar-link" %>
     <% end %>
