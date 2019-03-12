@@ -8,6 +8,7 @@ Rails.application.routes.draw do
     get 'applicant/:id/choose_other', to: 'pages#choose_other', as: :choose_other
     get 'applicant/:id/wrong_zip_code', to: 'pages#wrong_zip_code', as: :wrong_zip_code
     get 'dashboard/show', to: 'dashboard#show', as: :dashboard
+    patch 'dashboard/update', to: 'dashboard#update'
 
     resources :applicants, only: [:index, :new, :create, :update]
 
