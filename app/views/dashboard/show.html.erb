@@ -1,5 +1,6 @@
 <div class="container mt-3">
   <h3 class="dashboard-title">Dashboard</h3>
+  <h6 class="dashboard-title">Your applicants</h6>
   <div class="row">
     <% @applicants.each do |applicant| %>
       <div class="col-sm-3">
@@ -9,7 +10,7 @@
               <p> <%= applicant.first_name %> <%= applicant.last_name %> </p>
               </div>
                <div class="dashboard-card-content">
-                <p><%= applicant.birth_place %> </p>
+                <p><%= applicant.origin_state %> </p>
                 <% status = ["Documents ready", "Wait for 6 months", "No work permission"].sample %>
                 <div class='status <%= status == "Documents ready" ? 'green' : 'red' %>'>
                   <p><%= status %><%# applicant.final_status %></p>

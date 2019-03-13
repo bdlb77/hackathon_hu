@@ -40,13 +40,14 @@ body.wait {
   background-position: center;
 }
 
-// a {
-//   color: $purple;
-//   text-decoration: underline;
-//   &:hover {
-//     text-decoration: none;
-//   }
-// }
+.normal-link {
+  color: $purple;
+  text-decoration: underline;
+  &:hover {
+    color: $purple;
+    text-decoration: none;
+  }
+}
 
 
 .display-f-column-center{

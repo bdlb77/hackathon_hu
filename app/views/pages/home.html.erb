@@ -6,7 +6,7 @@
     <% if current_user.applicants.blank? %>
     <%= link_to "Start now", new_applicant_path, class: "our-big-btn" %>
     <% else %>
-    <%= link_to "Start now", applicants_path, class: "our-big-btn" %>
+    <%= link_to "Start now", new_applicant_path, class: "our-big-btn" %>
     <% end %>
     <% else %>
     <%= link_to "Start now", new_applicant_path, class: "our-big-btn" %>

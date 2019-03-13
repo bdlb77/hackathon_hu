@@ -9,7 +9,7 @@
               <p> <%= applicant.first_name %> <%= applicant.last_name %> </p>
               </div>
                <div class="dashboard-card-content">
-                <p><%= applicant.birth_place %> </p>
+                <p><%= applicant.origin_state %> </p>
                 <% status = ["Documents ready", "Wait for 6 months", "No work permission"].sample %>
                 <div class='status <%= status == "Documents ready" ? 'green' : 'red' %>'>
                   <p><%= status %><%# applicant.final_status %></p>
