@@ -27,8 +27,4 @@ class Fourth::ApplicationDatesController < ApplicationController
   def applicant_params
     params.require(:applicant).permit(:application_date)
   end
-
-  def secure
-
-  end
 end

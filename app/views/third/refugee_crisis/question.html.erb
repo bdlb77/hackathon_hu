@@ -12,7 +12,6 @@
         </div>
         <div class="question-content">
           <%= simple_form_for @applicant, :url => answer_third_refugee_crisis_path, :method => :post do |f| %>
-           <%# f.country_select :birth_place %>
           <%= f.country_select('origin_state', {label: "hi"}) %>
           <div class="button-on-right">
              <%= f.submit t('second.living_obligations.question.next'), class: "our-small-btn" %>
