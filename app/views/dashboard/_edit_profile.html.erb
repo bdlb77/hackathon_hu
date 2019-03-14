@@ -1,0 +1,14 @@
+<div class="edit-profile">
+  <h3>Your information</h3>
+<p class="light">You can change your comapny information here. All information are required to create the right forms for the local authroties, so please make sure everyhting is entered correctly.</p>
+
+<%= simple_form_for(@user, url: dashboard_update_path,  wrapper: :horizontal_form,) do |f| %>
+<%= f.input :name %>
+<%= f.input :address %>
+<%= f.input :zip_code %>
+<div class="button-on-right">
+<%= f.submit "Save", class: "our-small-btn"%>
+</div>
+<% end %>
+
+</div>

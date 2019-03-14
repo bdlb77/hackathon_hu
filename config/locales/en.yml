@@ -2,11 +2,14 @@ en:
   hello: "Hello world"
   company: "Company Profile"
   home:
-    contract: "Prefilled forms with one click"
-    people: "Focus on the people"
-    agreement: "Results fast and simple"
-    header: "Immigration Works"
-    sub_header: "Find the help you need to hire refugees."
+    contract: "Prefilled forms"
+    contract_sub: "A few clicks to obtain prefilled forms"
+    people: "Focus on people"
+    people_sub: "Leaving you more time to focus on people"
+    recruitment: "Fast recruitment"
+    recruitment_sub: "Fill open positions successfully"
+    header: "Integration Works"
+    sub_header: "Find the help you need to hire refugees"
   views:
     shared:
       navbar:
@@ -14,6 +17,7 @@ en:
         login: "Login"
         new_applicant: "New Applicant"
         all_applicants: "All Applicants"
+        sign_out: "Sign out"
   first:
     asylums:
       question:
