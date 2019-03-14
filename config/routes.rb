@@ -46,7 +46,7 @@ Rails.application.routes.draw do
         member do
           get 'question'
           post 'answer'
-          get 'unsuccessful_date'
+          get 'unsuccessful'
         end
       end
     end
