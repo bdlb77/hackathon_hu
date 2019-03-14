@@ -44,11 +44,11 @@
 User.destroy_all
 Applicant.destroy_all
 user = User.create(email: "company@gmail.com", password: "123456")
-1600.times do
+10.times do
   app =  Applicant.create(asylum: rand(0..1),
       residence_status: rand(0..2),
       living_obligation: rand(0..1),
-      application_date: Faker::Date.between(6.years.ago, Date.today),
+      application_date: Faker::Date.between(5.years.ago, Date.today),
       origin_state: nations.sample,
       occupation_type: rand(0..3),
       gender: rand(0..2),

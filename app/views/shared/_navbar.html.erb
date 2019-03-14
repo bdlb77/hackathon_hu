@@ -1,12 +1,12 @@
 <div class="navbar py-3 px-4 our-navbar">
   <%= link_to root_path, class: 'navbar-link' do %>
-    <%= image_tag "icon_one.png", class: "small-image" %>
+    <%= image_tag "logo-exclude.png", height: 40 %>
   <% end %>
   <div class="nav-bar-right d-flex align-items-center">
     <% if user_signed_in? %>
        <%= link_to t('views.shared.navbar.new_applicant'), new_applicant_path, class: "px-3 d-none d-sm-block navbar-link" %>
-       <%= link_to t('views.shared.navbar.all_applicants'), applicants_path, class: "px-3 d-none d-sm-block navbar-link" %>
-      <%= link_to t('views.shared.navbar.profile'), "#", class: "px-3 d-none d-sm-block navbar-link" %>
+      <%= link_to t('views.shared.navbar.profile'), dashboard_path, class: "px-3 d-none d-sm-block navbar-link" %>
+      <%= link_to t('views.shared.navbar.sign_out'), destroy_user_session_path, method: :delete, class: "px-3 d-none d-sm-block navbar-link" %>
     <% else %>
       <%= link_to t('views.shared.navbar.login'), new_user_session_path, class: "px-3 d-none d-sm-block navbar-link" %>
     <% end %>

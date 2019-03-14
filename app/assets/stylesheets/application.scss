@@ -12,6 +12,7 @@
 @import "layouts/index";
 @import "components/index";
 @import "pages/index";
+@import "dashboard/index";
 
 body.regular {
   min-height: 100vh;
@@ -39,10 +40,11 @@ body.wait {
   background-position: center;
 }
 
-a {
+.normal-link {
   color: $purple;
   text-decoration: underline;
   &:hover {
+    color: $purple;
     text-decoration: none;
   }
 }

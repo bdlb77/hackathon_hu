@@ -1,8 +1,10 @@
-<div class="container mt-4">
+<div class="container mt-3">
+  <h3 class="dashboard-title">Dashboard</h3>
+  <h6 class="dashboard-title">Your applicants</h6>
   <div class="row">
     <% @applicants.each do |applicant| %>
-    <div class="col-sm-3">
-      <%= link_to question_eighth_final_info_path(applicant), class: 'dashboard-link' do %>
+      <div class="col-sm-3">
+        <%= link_to question_eighth_final_info_path(applicant), class: 'dashboard-link' do %>
             <div class="dashboard-card">
               <div class="dashboard-card-header">
               <p> <%= applicant.first_name %> <%= applicant.last_name %> </p>
@@ -18,5 +20,26 @@
         <% end %>
       </div>
     <% end %>
+
+    <% if @total_applicants.size > 2  %>
+    <div class="col-sm-3 d-flex align-items-end">
+      <p><%= link_to 'See all applicants...', applicants_path, class: "px-3 d-none d-sm-block navbar-link" %></p>
+    </div>
+    <% end %>
   </div>
+
+
+<div class="dashboard-lower-part mt-5 mb-5">
+
+
+  <div class="">
+    <%= image_tag 'human.png' %>
+  </div>
+    <div class="">
+
+      <%= render 'edit_profile' %>
+
+  </div>
+    </div>
+</div>
 </div>

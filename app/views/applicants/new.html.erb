@@ -3,18 +3,25 @@
   <div class="col-md-8 offset-md-2">
     <div class="question-card">
         <div class="question-content">
+          <h3>New applicant</h3>
           <%= simple_form_for @applicant do |f| %>
           <%= f.input :first_name %>
           <%= f.input :last_name %>
           <%= f.input :gender, collection: [t('eight.final_info.question.option_1'), t('eight.final_info.question.option_2'), t('eight.final_info.question.option_3')], as: :radio_buttons %>
-          <%= f.input :birth_date, as: :date, start_year: Date.today.year - 90 %>
-          <%= f.input :origin_state, collection: @nations %>
+          <%= f.input :birth_date, as: :string, input_html: {class: "datepicker"} %>
+          <%= label_tag "State of origin" %> <br>
+          <%= f.country_select('origin_state') %>
           <div class="button-on-right">
             <%= f.submit t('first.asylums.question.next'), class: "our-small-btn" %>
           </div>
           <% end %>
         </div>
       </div>
+    </div>
+    <div class="col-md-2 mt-5">
+    <% if current_user.applicants.present? %>
+    <%= link_to "View old applicants", applicants_path, class: "normal-link" %>
+    <% end %>
     </div>
   </div>
 </div>

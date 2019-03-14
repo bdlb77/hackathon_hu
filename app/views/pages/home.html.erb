@@ -2,38 +2,49 @@
   <div class="container">
     <h1><%= t('home.header') %></h1><br>
     <p><%= t('home.sub_header') %></p>
-    <div class="position-button">
-      <% if user_signed_in? %>
-        <% if current_user.applicants.blank? %>
-        <%= link_to "Start now", new_applicant_path, class: "our-big-btn" %>
-        <% else %>
-        <%= link_to "Start now", applicants_path, class: "our-big-btn" %>
-        <% end %>
-      <% else %>
-      <%= link_to "Start now", new_applicant_path, class: "our-big-btn" %>
-      <% end %>
+    <% if user_signed_in? %>
+    <% if current_user.applicants.blank? %>
+    <%= link_to "Start now", new_applicant_path, class: "our-big-btn" %>
+    <% else %>
+    <%= link_to "Start now", new_applicant_path, class: "our-big-btn" %>
+    <% end %>
+    <% else %>
+    <%= link_to "Start now", new_applicant_path, class: "our-big-btn" %>
+    <% end %>
+  </div>
+</div>
+<div class="wrapper-linear pb-5">
+  <div class="container home-card py-5 px-3">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="background ml-3">
+          <%= image_tag '001-contract.png', height: 40, class: "img-icon mb-1" %>
+        </div>
+        <h4 class="mt-3 ml-3"><%= t('home.contract') %></h4>
+        <p class="ml-3"><%= t('home.contract_sub') %></p>
+      </div>
+      <div class="col-md-4">
+        <div class="background">
+          <%= image_tag '002-enterprise.png', height: 40, class: "img-icon mb-1" %>
+        </div>
+        <h4 class="mt-3"><%= t('home.people') %></h4>
+        <p><%= t('home.people_sub') %></p>
+      </div>
+      <div class="col-md-4">
+        <div class="background">
+          <%= image_tag '003-agreement.png', height: 40, class: "img-icon mb-1" %>
+        </div>
+        <h4 class="mt-3"><%= t('home.recruitment') %></h4>
+        <p><%= t('home.recruitment_sub') %></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container d-flex home-card">
+    <div class="col-md-12">
+      <p>This project was created in the course of the Berlin Legal Hackathon in February 2019 by the HU Legal Tech team. <br>
+      It won third place.</p>
     </div>
   </div>
 </div>
-<div class="wrapper-linear pt-5 pb-5">
-  <div class="container d-flex justify-content-around">
-    <div class="col-md-4 d-flex align-center justify-content-center">
-      <div class="icon-home display-f-column-center">
-        <%= image_tag '001-contract.png' %>
-        <h4 class="mt-5"><%= t('home.contract') %></p>
-      </div>
-    </div>
-    <div class="col-md-4 d-flex align-center justify-content-center">
-      <div class="icon-home display-f-column-center">
-        <%= image_tag '002-enterprise.png' %>
-        <h4 class="mt-5"><%= t('home.people') %></p>
-      </div>
-    </div>
-    <div class="col-md-4 d-flex align-center justify-content-center">
-      <div class="icon-home d-flex display-f-column-center">
-        <%= image_tag '003-agreement.png' %>
-        <h4 class="mt-5"><%= t('home.agreement') %></p>
-      </div>
-    </div>
-  </div>
-</div>
+
