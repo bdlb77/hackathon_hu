@@ -8,7 +8,6 @@
     <h5> <%= applicant.first_name %> <%= applicant.last_name %> </h5>
     </div>
      <div class="question-content">
-      <p>Born in:  <%= applicant.birth_place %> </p>
       <%= link_to "Start process", question_first_asylum_path(applicant), class: "our-small-btn" %>
     </div>
   </div>

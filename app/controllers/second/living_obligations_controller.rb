@@ -18,7 +18,9 @@ class Second::LivingObligationsController < ApplicationController
   end
 
   def unsuccessful
-    render layout: "fail_layout"
+    @header = "Your applicant is currently not allowed to work."
+    @message = "However, the obligation to live in refugee housing can persist for a max. period of six months. Come back later!"
+    render layout: "wait_layout"
   end
 
   private
