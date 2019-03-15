@@ -26,4 +26,8 @@ class Nineth::ResultsController < ApplicationController
     end
   end
 
+  def successful
+    render layout: "successful"
+  end
+
 end

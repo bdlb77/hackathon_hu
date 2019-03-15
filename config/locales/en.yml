@@ -55,7 +55,7 @@ en:
         name: "Which type of occupation do you want to offer your applicant?"
         option_1: "Praktikum (internship)"
         option_2: "Freiwilligendienst (voluntary service)"
-        option_3: "Ausbildung (traineeship)"
+        option_3: "Berufsausbildung (traineeship)"
         option_4: "Abhängige Beschäftigung (regular employment)"
   seventh:
     university_degree:

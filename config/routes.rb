@@ -92,6 +92,7 @@ Rails.application.routes.draw do
       resources :results, only: [] do
         member do
           get 'results'
+          get 'successful'
           get 'form_1'
           get 'form_2'
         end

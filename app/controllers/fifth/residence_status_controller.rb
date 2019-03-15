@@ -7,7 +7,7 @@ class Fifth::ResidenceStatusController  < ApplicationController
 
   def answer
     if params[:applicant][:residence_status] == "temporary resident permit"
-      @applicant.residence_status = 1
+      @applicant.residence_status = 1 # can we also just assign the string here? should work?!
       @applicant.save
       redirect_to question_sixth_occupation_type_path(@applicant)
     else

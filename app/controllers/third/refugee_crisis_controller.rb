@@ -8,7 +8,7 @@ class Third::RefugeeCrisisController  < ApplicationController
   end
 
   def answer
-    safe_states = ['Albania', "Austria", 'Belgium', "Bosnia and Herzegovina", "Bulgaria",
+    safe_states = ['AL', "Austria", 'Belgium', "Bosnia and Herzegovina", "Bulgaria",
                     "Croatia",
                     "Cyprus",
                     "Czech Republic",
