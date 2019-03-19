@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_13_125151) do
+ActiveRecord::Schema.define(version: 2019_03_19_205125) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -31,6 +31,8 @@ ActiveRecord::Schema.define(version: 2019_03_13_125151) do
     t.string "last_name"
     t.integer "gender"
     t.date "birth_date"
+    t.string "internship_length"
+    t.boolean "internship_mandatory"
     t.index ["user_id"], name: "index_applicants_on_user_id"
   end
 

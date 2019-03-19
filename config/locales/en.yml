@@ -57,6 +57,10 @@ en:
         option_2: "Freiwilligendienst (voluntary service)"
         option_3: "Berufsausbildung (traineeship)"
         option_4: "Abhängige Beschäftigung (regular employment)"
+    internships:
+      question:
+        mandatory_name: "Is the internship mandatory (e.g. for university studies)?"
+        length_name: "How long is the internship?"
   seventh:
     university_degree:
       question:

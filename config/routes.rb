@@ -68,6 +68,15 @@ Rails.application.routes.draw do
           post 'answer'
         end
       end
+
+      resources :internships, only: [] do
+        member do
+          get 'question_length'
+          post 'answer_length'
+          get 'question_mandatory'
+          post 'answer_mandatory'
+        end
+      end
     end
 
     namespace :seventh do
@@ -93,6 +102,7 @@ Rails.application.routes.draw do
         member do
           get 'results'
           get 'successful'
+          get "needs_authorization"
           get 'form_1'
           get 'form_2'
         end

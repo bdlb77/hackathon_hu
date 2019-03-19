@@ -3,12 +3,9 @@ class Sixth::OccupationTypeController < ApplicationController
   before_action :set_applicant
 
   def question
-
   end
 
   def answer
-    # @applicant.update(applicant_params)
-    # raise
     case params[:applicant][:occupation_type]
     when "Abhängige Beschäftigung (regular employment)"
       @applicant.occupation_type = 3
@@ -20,22 +17,19 @@ class Sixth::OccupationTypeController < ApplicationController
       @applicant.occupation_type = 0
     end
 
+    # if !!
     @applicant.save
-
-    case @applicant.occupation_type
-    when "Freiwilligendienst"
+    if @applicant.occupation_type == "Freiwilligendienst"
       redirect_to successful_nineth_result_path(@applicant)
-    when "Berufsausbildung" && @applicant.application_date > (Date.current - 3.months)
-      redirect_to needs_authorization
-    when "Abhängige_Beschäftigung"
-
+    elsif @applicant.occupation_type == "Berufsausbildung" && (@applicant.application_date < (Date.current - 3.months))
+      redirect_to needs_authorization_nineth_result_path(@applicant)
+    elsif @applicant.occupation_type == "Praktikum"
+      redirect_to question_length_sixth_internship_path(@applicant)
+    elsif @applicant.occupation_type == "Abhängige_Beschäftigung"
       redirect_to question_seventh_university_degree_path(@applicant)
     end
-      # raise
   end
 
-  def needs_authorization
-  end
 
   private
 

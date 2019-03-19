@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <div class="question-card">
+        <div class="question-card-header">
+          <h3>6</h3>
+          <div class="p-flex-box">
+            <span class="question">
+              <%= t('sixth.internships.question.lenght_name') %>
+            </span>
+          </div>
+        </div>
+        <div class="question-content">
+          <%= simple_form_for @applicant, :url => answer_length_sixth_internship_path(@applicant), :method => :post do |f| %>
+         <%= f.input :internship_length, collection: ["mehr als 3 Monate", "weniger als 3 Monate"] %>
+          <div class="button-on-right">
+            <%= f.submit t('fifth.residence_status.question.next'), class: "our-small-btn" %>
+          </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
