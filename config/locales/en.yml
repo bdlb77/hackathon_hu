@@ -65,6 +65,9 @@ en:
     university_degree:
       question:
         name: "Does your applicant hold an university degree?"
+    earnings:
+      question:
+        name: "Will the applicant earn more than 49.600 EUR (brutto)?"
   eight:
     final_info:
       question:

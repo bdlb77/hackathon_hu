@@ -86,6 +86,20 @@ Rails.application.routes.draw do
           post 'answer'
         end
       end
+
+      resources :earnings, only: [] do
+        member do
+          get "question"
+          post 'answer'
+        end
+      end
+
+      resources :scarce_occupation, only: [] do
+        member do
+          get "question"
+          post 'answer'
+        end
+      end
     end
 
     namespace :eighth do
