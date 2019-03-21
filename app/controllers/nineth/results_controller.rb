@@ -26,4 +26,12 @@ class Nineth::ResultsController < ApplicationController
     end
   end
 
+  def needs_authorization
+    render layout: "successful"
+  end
+
+  def successful
+    render layout: "successful"
+  end
+
 end

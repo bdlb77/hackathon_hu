@@ -3,18 +3,18 @@
     <div class="col-md-8 offset-md-2">
       <div class="question-card">
         <div class="question-card-header">
-          <h3>3</h3>
+          <h3>6</h3>
           <div class="p-flex-box">
             <span class="question">
-              <%= t('third.refugee_crisis.question.name') %>
+              <%= t('sixth.internships.question.mandatory_name') %>
             </span>
           </div>
         </div>
         <div class="question-content">
-          <%= simple_form_for @applicant, :url => answer_third_refugee_crisis_path, :method => :post do |f| %>
-          <%= f.country_select('origin_state', {label: "hi"}) %>
+          <%= simple_form_for @applicant, :url => answer_mandatory_sixth_internship_path(@applicant), :method => :post do |f| %>
+         <%= f.input :internship_mandatory, as: :radio_buttons %>
           <div class="button-on-right">
-             <%= f.submit t('second.living_obligations.question.next'), class: "our-small-btn" %>
+            <%= f.submit t('fifth.residence_status.question.next'), class: "our-small-btn" %>
           </div>
           <% end %>
         </div>

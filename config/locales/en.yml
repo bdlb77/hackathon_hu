@@ -55,12 +55,19 @@ en:
         name: "Which type of occupation do you want to offer your applicant?"
         option_1: "Praktikum (internship)"
         option_2: "Freiwilligendienst (voluntary service)"
-        option_3: "Ausbildung (traineeship)"
+        option_3: "Berufsausbildung (traineeship)"
         option_4: "Abhängige Beschäftigung (regular employment)"
+    internships:
+      question:
+        mandatory_name: "Is the internship mandatory (e.g. for university studies)?"
+        length_name: "How long is the internship?"
   seventh:
     university_degree:
       question:
         name: "Does your applicant hold an university degree?"
+    earnings:
+      question:
+        name: "Will the applicant earn more than 49.600 EUR (brutto)?"
   eight:
     final_info:
       question:
