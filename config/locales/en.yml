@@ -2,14 +2,15 @@ en:
   hello: "Hello world"
   company: "Company Profile"
   home:
+    header: "Integration Works"
+    sub_header: "Find the help you need to hire refugees"
     contract: "Prefilled forms"
     contract_sub: "A few clicks to obtain prefilled forms"
     people: "Focus on people"
     people_sub: "Leaving you more time to focus on people"
     recruitment: "Fast recruitment"
     recruitment_sub: "Fill open positions successfully"
-    header: "Integration Works"
-    sub_header: "Find the help you need to hire refugees"
+    hackathon_html: "This project was created in the course of the Berlin Legal Hackathon in February 2019 by the HU Legal Tech team.<br>It won third place."
   views:
     shared:
       navbar:

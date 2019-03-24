@@ -4,9 +4,13 @@ de:
   home:
     header: "Wir helfen dem Mittelstand dabei Geflüchtete einzustellen!"
     sub_header: "Finden Sie dringend gesuchte Kollegen."
-    contract: "Fertige Formulare auf einen Klick"
-    people: "Ergebnisse schnell und einfach"
-    agreement: "Ergebnisse schnell und einfach"
+    contract: "Fertige Formulare"
+    contract_sub: "In wenigen Schritten zu ausgefüllten Formularen"
+    people: "Fokus auf den Menschen"
+    people_sub: "Sodass sie mehr Zeit für den Menschen haben"
+    recruitment: "Schnelle Einstellungen"
+    recruitment_sub: "Besetzten Sie offene Stellen erfolgreich"
+    hackathon_html: "Diese Projekt enstand während des Berlin Legal Hackathon im Februar 2019.<br>Es hat den dritten Platz belegt."
   views:
     shared:
       navbar:
@@ -14,6 +18,7 @@ de:
         login: "Login"
         new_applicant: "Neuer Bewerber"
         all_applicants: "Alle Bewerber"
+        sign_out: "Abmelden"
   first:
     asylums:
       question:
@@ -64,3 +69,11 @@ de:
         option_1: "Männlich"
         option_2: "Weiblich"
         option_3: "Divers"
+  simple_form:
+    labels:
+      applicant:
+        first_name: 'Vorname'
+        last_name: 'Nachname'
+        gender: 'Geschlecht'
+        birth_date: "Geburtstag"
+        origin_state: "Herkunftsstaat"
