@@ -11,31 +11,31 @@
       <%= link_to t('views.shared.navbar.login'), new_user_session_path, class: "px-3 d-none d-sm-block navbar-link" %>
     <% end %>
     <% if params[:locale] == "de" %>
-      <%= link_to root_path(locale: :en) do %>
+      <%= link_to root_path(locale: :en), class: "px-3 d-none d-sm-block navbar-link" do %>
         🇬🇧
       <% end %>
     <% else %>
-      <%= link_to root_path(locale: :de) do %>
+      <%= link_to root_path(locale: :de), class: "px-3 d-none d-sm-block navbar-link" do %>
         🇩🇪
       <% end %>
     <% end %>
   </div>
-  <div class="dropdown burger d-block d-sm-none">
+  <div class="dropdown burger d-block d-sm-none dropdown-burger">
     <i class="fas fa-bars" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
      <% if user_signed_in? %>
-       <%= link_to t('views.shared.navbar.new_applicant'), new_applicant_path, class: "px-3 d-none d-sm-block navbar-link dropdown-item" %>
-       <%= link_to t('views.shared.navbar.profile'), dashboard_path, class: "px-3 d-none d-sm-block navbar-link dropdown-item" %>
-       <%= link_to t('views.shared.navbar.sign_out'), destroy_user_session_path, method: :delete, class: "px-3 d-none d-sm-block navbar-link dropdown-item" %>
+       <%= link_to t('views.shared.navbar.new_applicant'), new_applicant_path, class: "px-3 d-block d-sm-none navbar-link dropdown-item" %>
+       <%= link_to t('views.shared.navbar.profile'), dashboard_path, class: "px-3 d-block d-sm-none navbar-link dropdown-item" %>
+       <%= link_to t('views.shared.navbar.sign_out'), destroy_user_session_path, method: :delete, class: "px-3 d-block d-sm-none navbar-link dropdown-item" %>
      <% else %>
-       <%= link_to t('views.shared.navbar.login'), new_user_session_path, class: "px-3 d-none d-sm-block navbar-link dropdown-item" %>
+       <%= link_to t('views.shared.navbar.login'), new_user_session_path, class: "px-3 d-block d-sm-none navbar-link dropdown-item" %>
      <% end %>
      <% if params[:locale] == "de" %>
-       <%= link_to root_path(locale: :en), class: "dropdown-item" do %>
+       <%= link_to root_path(locale: :en), class: "px-3 d-block d-sm-none navbar-link dropdown-item" do %>
          🇬🇧
        <% end %>
      <% else %>
-       <%= link_to root_path(locale: :de), class: "dropdown-item" do %>
+       <%= link_to root_path(locale: :de), class: "px-3 d-block d-sm-none navbar-link dropdown-item" do %>
          🇩🇪
        <% end %>
      <% end %>
