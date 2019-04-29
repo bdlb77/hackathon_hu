@@ -46,9 +46,9 @@ en:
     residence_status:
       question:
         name: "Which residence permit does your applicant hold?"
-        option_1: "Arbeitserlaubnis (residence permit)"
-        option_2: "Gestattung (temporary resident permit)"
-        option_3: "Duldung (tolerated resident permit)"
+        option_1: "(residence permit)"
+        option_2: "(temporary resident permit)"
+        option_3: "(tolerated resident permit)"
         next: "Next"
   sixth:
     occupation_type:

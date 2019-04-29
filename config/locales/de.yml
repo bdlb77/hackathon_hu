@@ -46,9 +46,9 @@ de:
     residence_status:
       question:
         name: "Welchen Aufenthaltstitel hat der Bewerber?"
-        option_1: "Arbeitserlaubnis"
-        option_2: "Gestattung"
-        option_3: "Duldung"
+        option_1: ""
+        option_2: ""
+        option_3: ""
         next: "Weiter"
   sixth:
     occupation_type:

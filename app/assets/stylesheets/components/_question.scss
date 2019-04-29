@@ -41,10 +41,18 @@
 .picture-input {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 10px 25px;
+  transition: all 0.3 ease;
+  margin-bottom: 20px;
   &:hover {
     background-color: $light-gray;
+  }
+  input {
+    display: none;
+  }
+  label {
+    margin-left: 40px;
   }
 }
 
@@ -86,4 +94,9 @@
   label {
     font-size: 12px;
   }
+}
+
+
+.checkbox-checked {
+  background-color: $light-gray;
 }
